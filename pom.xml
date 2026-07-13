@@ -376,6 +376,12 @@ Bundle-DocURL:
                 <artifactId>io.wcm.testing.aem-mock.junit5</artifactId>
                 <version>3.0.2</version>
                 <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.apache.commons</groupId>
+                        <artifactId>commons-imaging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>com.adobe.aem</groupId>

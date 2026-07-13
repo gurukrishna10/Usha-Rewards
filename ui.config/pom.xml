@@ -25,8 +25,29 @@
                     <group>com.usha.rewards</group>
                     <name>usha-rewards.ui.config</name>
                     <packageType>application</packageType>
+                    <repositoryStructurePackages>
+                        <repositoryStructurePackage>
+                            <groupId>com.usha.rewards</groupId>
+                            <artifactId>usha-rewards.ui.apps.structure</artifactId>
+                        </repositoryStructurePackage>
+                    </repositoryStructurePackages>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.usha.rewards</groupId>
+                            <artifactId>usha-rewards.ui.apps.structure</artifactId>
+                        </dependency>
+                    </dependencies>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.usha.rewards</groupId>
+            <artifactId>usha-rewards.ui.apps.structure</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
 </project>

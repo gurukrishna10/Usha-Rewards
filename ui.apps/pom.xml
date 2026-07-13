@@ -33,6 +33,12 @@
                             <artifactId>usha-rewards.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.usha.rewards</groupId>
+                            <artifactId>usha-rewards.ui.apps.structure</artifactId>
+                        </dependency>
+                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>

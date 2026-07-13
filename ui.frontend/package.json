@@ -1,0 +1,8 @@
+{
+  "name": "usha-rewards.ui.frontend",
+  "version": "1.0.0",
+  "description": "Usha Rewards - Frontend",
+  "scripts": {
+    "build": "echo 'Frontend build placeholder'"
+  }
+}
