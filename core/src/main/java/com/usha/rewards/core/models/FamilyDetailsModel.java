@@ -28,6 +28,10 @@ public class FamilyDetailsModel {
     @Default(values = "")
     private String emailAddress;
 
+    @ValueMapValue
+    @Default(values = "")
+    private String familyPhoto;
+
     public String getMemberName() {
         return memberName;
     }
@@ -46,5 +50,9 @@ public class FamilyDetailsModel {
 
     public String getEmailAddress() {
         return emailAddress;
+    }
+
+    public String getFamilyPhoto() {
+        return familyPhoto;
     }
 }

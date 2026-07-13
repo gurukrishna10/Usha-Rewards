@@ -2,6 +2,9 @@
 
 <div class="familydetails">
     <h2 class="familydetails__title">Family Details</h2>
+    <div data-sly-test="${model.familyPhoto}" class="familydetails__photo">
+        <img src="${model.familyPhoto}" alt="Family Photo" class="familydetails__photo-img"/>
+    </div>
     <div class="familydetails__content">
         <div class="familydetails__row">
             <span class="familydetails__label">Member Name:</span>
