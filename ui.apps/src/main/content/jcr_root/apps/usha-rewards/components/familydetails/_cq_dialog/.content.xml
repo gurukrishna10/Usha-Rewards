@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Family Details"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <memberName
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Member Name"
+                        fieldDescription="Enter the family member's full name"
+                        name="./memberName"
+                        required="{Boolean}true"/>
+                    <relationship
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Relationship"
+                        fieldDescription="Select the relationship"
+                        name="./relationship">
+                        <items jcr:primaryType="nt:unstructured">
+                            <spouse
+                                jcr:primaryType="nt:unstructured"
+                                text="Spouse"
+                                value="Spouse"/>
+                            <child
+                                jcr:primaryType="nt:unstructured"
+                                text="Child"
+                                value="Child"/>
+                            <parent
+                                jcr:primaryType="nt:unstructured"
+                                text="Parent"
+                                value="Parent"/>
+                            <sibling
+                                jcr:primaryType="nt:unstructured"
+                                text="Sibling"
+                                value="Sibling"/>
+                            <other
+                                jcr:primaryType="nt:unstructured"
+                                text="Other"
+                                value="Other"/>
+                        </items>
+                    </relationship>
+                    <dateOfBirth
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                        fieldLabel="Date of Birth"
+                        fieldDescription="Select date of birth"
+                        name="./dateOfBirth"
+                        type="date"/>
+                    <contactNumber
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Contact Number"
+                        fieldDescription="Enter contact number"
+                        name="./contactNumber"/>
+                    <emailAddress
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Email Address"
+                        fieldDescription="Enter email address"
+                        name="./emailAddress"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

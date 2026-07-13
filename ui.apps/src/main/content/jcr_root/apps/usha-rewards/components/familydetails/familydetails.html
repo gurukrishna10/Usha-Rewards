@@ -1,0 +1,27 @@
+<sly data-sly-use.model="com.usha.rewards.core.models.FamilyDetailsModel"/>
+
+<div class="familydetails">
+    <h2 class="familydetails__title">Family Details</h2>
+    <div class="familydetails__content">
+        <div class="familydetails__row">
+            <span class="familydetails__label">Member Name:</span>
+            <span class="familydetails__value">${model.memberName}</span>
+        </div>
+        <div class="familydetails__row">
+            <span class="familydetails__label">Relationship:</span>
+            <span class="familydetails__value">${model.relationship}</span>
+        </div>
+        <div class="familydetails__row">
+            <span class="familydetails__label">Date of Birth:</span>
+            <span class="familydetails__value">${model.dateOfBirth}</span>
+        </div>
+        <div class="familydetails__row">
+            <span class="familydetails__label">Contact Number:</span>
+            <span class="familydetails__value">${model.contactNumber}</span>
+        </div>
+        <div class="familydetails__row">
+            <span class="familydetails__label">Email Address:</span>
+            <span class="familydetails__value">${model.emailAddress}</span>
+        </div>
+    </div>
+</div>
